@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ndula Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+</style>
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://kit.fontawesome.com/33d16de7ea.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body> 
+
+    <!-- Header-->
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src=" " alt=""></a>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+        <div class="text-box">
+            <h1>Contact Us Now</h1>
+           
+        </div>
+   
+    </div>
+
+    <!--maps and addresses-->
+    <div class="address">
+        <div class="row">
+            <div class="columns-2">
+                <h3>Call Us 24*7</h3>
+                <p>+254790793622</p>
+                <h3>Write us</h3>
+                <p>kelvinclere24@gmail.com</p>
+                <h3>Main Office</h3>
+                <p>P.o Box 30179, Gpo, Nairobi, Kenya </p>
+            </div>
+            <div class="columns-2">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.215633600888!2d36.81319140414191!3d-1.2920444325443932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f3fba295ec681%3A0x51387e7a5743e729!2sKahawa%20Wendani%20Stage!5e0!3m2!1sen!2ske!4v1645451336418!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!--filling form-->
+    <div class="fill-form">
+        <form>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="firstname" placeholder="First name">
+            <label for=" lname">Lastname</label>
+            <input type="text" id="fname" name="lastname" placeholder="Last name">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="ethiopia">Ethiopia</option>
+                <option value="tanzania">Tanzania</option>
+                <option value="nigeria">Nigeria</option>
+            </select>
+            <textarea>Enter your comments...</textarea>
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+
+
+     <!--Footer-->
+     <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, iure?</p>
+        <h5>copyright @2022 Kelvinclere_ke</h5>
+    </div>
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+// Optional parameters
+autoplay: {
+  delay:3000,
+  disableOnInteraction: false,
+},
+loop: true,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
+
+
+</body>
+</html>

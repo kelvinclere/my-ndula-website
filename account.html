@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Ndula Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+</style>
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <script src="https://kit.fontawesome.com/33d16de7ea.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body> 
+
+    <!-- Header-->
+    <div class="header">
+        <nav>
+            <a href="index.html"><img src=" " alt=""></a>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </div>
+            
+        </nav>
+       <div class="form">
+           <div class="form-box">
+               <div class="button-box">
+                   <div id="btn"></div>
+                   <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                   <button type="button" class="toggle-btn" onclick="register()" >Register</button>
+
+               </div>
+               <div class="social-icons">
+                   <img src="images/facebook.png">
+                   <img src="images/twitter.png">
+                   <img src="images/instagram-new.png">
+               </div>
+               <form id="login" class="input-group">
+                   <input type="text" class="input-field" placeholder="Username" required>
+                   <input type="password" class="input-field" placeholder="password" required>
+                   <input type="checkbox" class="checkbox"><span>Remember password?</span>
+                   <button type="submit" class="submit-btn">Login</button>
+               </form>
+
+               <form id="register" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>   
+                <input type="email" class="input-field" placeholder="Email addres" required>
+                <input type="password" class="input-field" placeholder="password" required>
+                <input type="password" class="input-field" placeholder="confirm password" required>
+                <input type="checkbox" class="checkbox"><span>I agree with the terms & conditions</span>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+           </div>
+       </div>
+   
+    </div>
+
+    <!--corousel-->
+
+
+
+      <!--Footer-->
+      <div class="footer">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <h5>copyright @2022 Kelvinclere_ke</h5>
+    </div>
+
+
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+// Optional parameters
+autoplay: {
+  delay:3000,
+  disableOnInteraction: false,
+},
+loop: true,
+
+// If we need pagination
+pagination: {
+el: '.swiper-pagination',
+clickable: true,
+},
+
+
+// Navigation arrows
+navigation: {
+nextEl: '.swiper-button-next',
+prevEl: '.swiper-button-prev',
+},
+
+});
+</script>
+<script>
+    var x=document.getElementById("login");
+    var y=document.getElementById("register");
+    var z=document.getElementById("btn");
+
+    function register(){
+        x.style.left="-400px"
+        y.style.left="50px"
+        z.style.left="110px"
+    }
+    function login(){
+        x.style.left="50px"
+        y.style.left="450px"
+        z.style.left="0px"
+    }
+</script>
+
+
+
+</body>
+</html>
